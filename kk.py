@@ -54,7 +54,7 @@ def simulations():
 
 			fieldnames = ["filenum", "kk", "time kk", "std rand", "time srand", "std hill", "time shill", "std simAnneal", "time sanneal", "part rand", "time prand", "part hill", "time phill", "part simAnneal", "time psim"]
 			csvwriter = csv.DictWriter(csvfile,fieldnames=fieldnames)
-			csvwriter.writeheader()
+			#csvwriter.writeheader()
 			kkres, tkk = kk(nums)
 			sRR, tsrr = standard.repeatedRandom(nums)
 			sHC, tshc = standard.hillClimbing(nums)
